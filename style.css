@@ -21,7 +21,7 @@ body {
 }
 /*form styles*/
 #msform {
-	width: 100%;
+	width: 400px;
 	margin: 50px auto;
 	text-align: center;
 	position: relative;
@@ -135,7 +135,7 @@ body {
 
 @media screen and (max-width:700){
     form{
-        width:auto;
+        width:100%;
     }
 }
 

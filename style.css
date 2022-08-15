@@ -134,7 +134,7 @@ body {
 }
 
 @media screen and (max-width:700){
-    form{
+    #msform{
         width:100%;
     }
 }

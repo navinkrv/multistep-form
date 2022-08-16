@@ -19,6 +19,11 @@ input[type='date']{
 	background: white;
     color: #b1a9a9;
 }
+select{
+	padding: 15px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
 .doctor-box{
 	border:1px solid grey;
 	padding:5px;

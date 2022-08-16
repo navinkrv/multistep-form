@@ -8,26 +8,52 @@
 
     <link rel="stylesheet" href="style.css">
     <style>
+      form{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+          }
+      fieldset{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
         .box{
         
            
           /* margin: 10px auto; */
           padding: 5px;
+          width: 100%;
+        }
+        .section{
+         
+          padding:10px;
+          margin-bottom: 15px;
+          width: 100%;
+
+          display: flex;
+    flex-direction: column;
+    align-items: center;
         }
        input[type='radio']{
         display: none;
        }
         label{
           display: inline-block;
-          font-size:1.15rem;
+          font-size:1rem;
           border: 1px solid grey;
-          padding: 10px;
+          padding: 10px 2px;
           width: 100%;
           border-radius: 5px;
           color: #504444;
         }
         input[type='radio']:checked + label{
           box-shadow: #a7a7df 0px 0px 10px 1px;
+        }
+        .row{
+          display: flex;
+          flex-direction: row;
+          
         }
     </style>
 </head>
@@ -45,32 +71,85 @@
     <!-- fieldsets -->
     <fieldset>
       <h2 class="fs-title">Select Service</h2>
-      <div class="box">
-        <input type="radio" id="opt_1" name="service" value="video call for 15 min" />
-      <label for="opt_1">Video Call for 15 min</label><br>
+
+      <div class="section">
+        <h3 style="text-align:left">Video Consultation</h3>
+        <div class="box">
+          <input type="radio" id="opt_1" name="service" value="Consultation with Psychiatrist (Rs. 2500)" />
+        <label for="opt_1">Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="opt_2" name="service" value="Consultation with Psychologist (Rs. 2500)" />
+          <label for="opt_2">Consultation with Psychologist <br> (Rs. 2500)</label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="opt_8" name="service" value="Follow-up Consultation with Psychiatrist (Rs. 2500)" />
+          <label for="opt_8">Follow-up Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="opt_9" name="service" value="Follow-up Consultation with Psychologist (Rs. 2500)" />
+          <label for="opt_9">Follow-up Consultation with Psychologist <br> (Rs. 2500)</label><br>
+        </div>
       </div>
-      <div class="box">
-        <input type="radio" id="opt_2" name="service" value="video call for 45 min" />
-        <label for="opt_2">Video Call for 45 min</label><br>
+      
+      <div class="section">
+        <h3 style="text-align:left">In Clinic Consultation</h3>
+        <div class="box">
+          <input type="radio" id="opt_10" name="service" value="Consultation with Psychiatrist (Rs. 2500)" />
+        <label for="opt_10">Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="opt_11" name="service" value="Consultation with Psycologist (Rs. 2500)" />
+          <label for="opt_11">Consultation with Psycologist <br> (Rs. 2500)</label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="opt_12" name="service" value="Follow-up Consultation with Psycologist (Rs. 2500)" />
+          <label for="opt_12">Follow-up Consultation with Psycologist <br> (Rs. 2500)</label><br>
+        </div>
+        <div class="box">
+          <input type="radio" id="opt_13" name="service" value="Follow-up Consultation with Psychiatrist (Rs. 2500)" />
+          <label for="opt_13">Follow-up Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
+        </div>
       </div>
       
       <input type="button" name="next" class="next action-button" value="Next" />
     </fieldset>
     <fieldset>
-      <h2 class="fs-title">Choose doctor</h2>
+      <h2 class="fs-title doctor-title " style="margin-bottom: 50px;">Choose doctor</h2>
       <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
-      <div class="box">
+      <div class="box" style="margin-bottom: 50px;">
         <input type="radio" id="opt_3" name="doctor" value="Doctor A" />
-        <label for="opt_3">Doctor A</label><br>
+        <label class="doctor-box" for="opt_3">
+          <img src="https://cdn.pixabay.com/photo/2015/03/04/22/35/avatar-659652__340.png" alt="" class="doctor-pic"><br>
+          <b>Doctor A</b><br><div style="text-align:left">
+            <p><b>Education:</b> M.Sc Psycologist</p><br>
+          <p><b>Description</b> : M.sc Psycologist. She specializes in mental therapy/couples counselling.</p><br>
+        
+          </div>
+       </label><br>
        
       </div>
-      <div class="box">
+      <div class="box" style="margin-bottom: 50px;">
         <input type="radio" id="opt_4" name="doctor" value="Doctor B" />
-        <label for="opt_4">Doctor B</label><br>
+        <label class="doctor-box" for="opt_4">
+          <img src="https://cdn.pixabay.com/photo/2015/03/04/22/35/avatar-659652__340.png" alt="" class="doctor-pic"><br>
+          <b>Doctor B</b><br><div style="text-align:left">
+            <p><b>Education:</b> M.Sc Psycologist</p><br>
+          <p><b>Description</b> : M.sc Psycologist. She specializes in mental therapy/couples counselling.</p><br>
+        
+          </div>
+        </label><br>
       </div>
-      <div class="box">
+      <div class="box" style="margin-bottom: 50px;">
         <input type="radio" id="opt_5" name="doctor" value="Doctor C" />
-        <label for="opt_5">Doctor C</label><br>
+        <label class="doctor-box" for="opt_5">
+          <img src="https://cdn.pixabay.com/photo/2015/03/04/22/35/avatar-659652__340.png" alt="" class="doctor-pic"><br>
+          <b>Doctor C</b><br><div style="text-align:left">
+            <p><b>Education:</b> M.Sc Psycologist</p><br>
+          <p><b>Description</b> : M.sc Psycologist. She specializes in mental therapy/couples counselling.</p><br>
+        
+          </div>
+        </label><br>
       </div>
       
       <input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -79,12 +158,25 @@
     <fieldset>
       <h2 class="fs-title">Select Time Slot</h2>
       <div class="box">
-        <input type="radio" id="opt_6" name="time" value="12:00" />
-        <label for="opt_6">12:00 PM</label><br>
+        <b>Select Date*</b><br>
+        <input type="date" id="opt_6" name="date" value="12:00" /required>
+        <!-- <label for="opt_6">12:00 PM</label><br> -->
+      </div>
+      <b>Select Time: </b>
+      <div class="box">
+
+        <input type="radio" id="opt_7" name="time" value="1:00" />
+        <label for="opt_7">11:00 AM</label><br>
       </div>
       <div class="box">
-        <input type="radio" id="opt_7" name="time" value="1:00" />
-        <label for="opt_7">1:00 PM</label><br>
+
+        <input type="radio" id="opt_14" name="time" value="1:00" />
+        <label for="opt_14">12:00 PM</label><br>
+      </div>
+      <div class="box">
+
+        <input type="radio" id="opt_15" name="time" value="1:00" />
+        <label for="opt_15">1:00 PM</label><br>
       </div>
       
       
@@ -94,9 +186,9 @@
     <fieldset>
       <h2 class="fs-title">Personal Details</h2>
       <h3 class="fs-subtitle">Enter to confirm appointment</h3>
-      <input type="text" name="name" placeholder="First Name" required />
+      <input type="text" name="name" placeholder="First Name" />
       
-      <input type="text" name="phone" placeholder="Phone" required />
+      <input type="text" name="phone" placeholder="Phone" />
 
       <input type="button" name="previous" class="previous action-button" value="Previous" />
       <input type="submit" name="submit" class="submit action-button" value="Submit" />

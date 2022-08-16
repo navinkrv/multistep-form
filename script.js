@@ -23,12 +23,14 @@ $(".next").click(function(){
 			//1. scale current_fs down to 80%
 			scale = 1 - (1 - now) * 0.2;
 			//2. bring next_fs from the right(50%)
+
 			left = (now * 50)+"%";
 			//3. increase opacity of next_fs to 1 as it moves in
 			opacity = 1 - now;
+			opacity = 1 - now;
 			current_fs.css({
         'transform': 'scale('+scale+')',
-        'position': 'absolute'
+        'position': 'relative','display':'none'
       });
 			next_fs.css({'left': left, 'opacity': opacity});
 		}, 
@@ -64,8 +66,8 @@ $(".previous").click(function(){
 			left = ((1-now) * 50)+"%";
 			//3. increase opacity of previous_fs to 1 as it moves in
 			opacity = 1 - now;
-			current_fs.css({'left': left});
-			previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+			current_fs.css({'left': left,'display':'none'});
+			previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity,'position':'relative'});
 		}, 
 		duration: 800, 
 		complete: function(){
@@ -80,5 +82,6 @@ $(".previous").click(function(){
 // $(".submit").click(function(){
 // 	return false;
 // })
+
 
 

@@ -22,19 +22,22 @@
         
            
           /* margin: 10px auto; */
-          padding: 5px;
-          width: 100%;
+          padding: 10px;
+          width: 90%;
         }
         .section{
          
-          padding:10px;
+          /* padding:10px; */
           margin-bottom: 15px;
-          width: 100%;
+          /* width: 100%; */
 
           display: flex;
     flex-direction: column;
     align-items: center;
         }
+        .time-box{
+	          width: 50%;
+          }
        input[type='radio']{
         display: none;
        }
@@ -50,11 +53,7 @@
         input[type='radio']:checked + label{
           box-shadow: #44cceb 0px 0px 10px 1px;
         }
-        .row{
-          display: flex;
-          flex-direction: row;
-          
-        }
+        
     </style>
 </head>
 <body>
@@ -71,52 +70,55 @@
     <!-- fieldsets -->
     <fieldset>
       <h2 class="fs-title">Select Service</h2>
-
-      <div class="section">
-        <h3 style="text-align:left">Video Consultation</h3>
-        <div class="box">
-          <input type="radio" id="opt_1" name="service" value="Consultation with Psychiatrist (Rs. 2500)" />
-        <label for="opt_1">Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="opt_2" name="service" value="Consultation with Psychologist (Rs. 2500)" />
-          <label for="opt_2">Consultation with Psychologist <br> (Rs. 2500)</label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="opt_8" name="service" value="Follow-up Consultation with Psychiatrist (Rs. 2500)" />
-          <label for="opt_8">Follow-up Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="opt_9" name="service" value="Follow-up Consultation with Psychologist (Rs. 2500)" />
-          <label for="opt_9">Follow-up Consultation with Psychologist <br> (Rs. 2500)</label><br>
-        </div>
-      </div>
-      
-      <div class="section">
-        <h3 style="text-align:left">In Clinic Consultation</h3>
-        <div class="box">
-          <input type="radio" id="opt_10" name="service" value="Consultation with Psychiatrist (Rs. 2500)" />
-        <label for="opt_10">Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="opt_11" name="service" value="Consultation with Psycologist (Rs. 2500)" />
-          <label for="opt_11">Consultation with Psycologist <br> (Rs. 2500)</label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="opt_12" name="service" value="Follow-up Consultation with Psycologist (Rs. 2500)" />
-          <label for="opt_12">Follow-up Consultation with Psycologist <br> (Rs. 2500)</label><br>
-        </div>
-        <div class="box">
-          <input type="radio" id="opt_13" name="service" value="Follow-up Consultation with Psychiatrist (Rs. 2500)" />
-          <label for="opt_13">Follow-up Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
-        </div>
-      </div>
+<div class="row">
+  <div class="section">
+    <h3 style="text-align:left">Video Consultation</h3>
+    <div class="box">
+      <input type="radio" id="opt_1" name="service" value="Consultation with Psychiatrist (Rs. 2500)" />
+    <label for="opt_1">Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="opt_2" name="service" value="Consultation with Psychologist (Rs. 2500)" />
+      <label for="opt_2">Consultation with Psychologist <br> (Rs. 2500)</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="opt_8" name="service" value="Follow-up Consultation with Psychiatrist (Rs. 2500)" />
+      <label for="opt_8">Follow-up Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="opt_9" name="service" value="Follow-up Consultation with Psychologist (Rs. 2500)" />
+      <label for="opt_9">Follow-up Consultation with Psychologist <br> (Rs. 2500)</label><br>
+    </div>
+  </div>
+  
+  <div class="section">
+    <h3 style="text-align:left">In Clinic Consultation</h3>
+    <div class="box">
+      <input type="radio" id="opt_10" name="service" value="Consultation with Psychiatrist (Rs. 2500)" />
+    <label for="opt_10">Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="opt_11" name="service" value="Consultation with Psycologist (Rs. 2500)" />
+      <label for="opt_11">Consultation with Psycologist <br> (Rs. 2500)</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="opt_12" name="service" value="Follow-up Consultation with Psycologist (Rs. 2500)" />
+      <label for="opt_12">Follow-up Consultation with Psycologist <br> (Rs. 2500)</label><br>
+    </div>
+    <div class="box">
+      <input type="radio" id="opt_13" name="service" value="Follow-up Consultation with Psychiatrist (Rs. 2500)" />
+      <label for="opt_13">Follow-up Consultation with Psychiatrist <br> (Rs. 2500)</label><br>
+    </div>
+  </div>
+</div>
+     
       
       <input type="button" name="next" class="next action-button" value="Next" />
     </fieldset>
     <fieldset>
       <h2 class="fs-title doctor-title " style="margin-bottom: 50px;">Choose doctor</h2>
       <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
+     <div class="row">
       <div class="box" style="margin-bottom: 50px;">
         <input type="radio" id="opt_3" name="doctor" value="Doctor A" />
         <label class="doctor-box" for="opt_3">
@@ -151,6 +153,8 @@
           </div>
         </label><br>
       </div>
+     </div>
+     
       
       <input type="button" name="previous" class="previous action-button" value="Previous" />
       <input type="button" name="next" class="next action-button" value="Next" />
@@ -163,17 +167,17 @@
         <!-- <label for="opt_6">12:00 PM</label><br> -->
       </div>
       <b>Select Time: </b>
-      <div class="box">
+      <div class="box time-box">
 
         <input type="radio" id="opt_7" name="time" value="1:00" />
         <label for="opt_7">11:00 AM</label><br>
       </div>
-      <div class="box">
+      <div class="box time-box">
 
         <input type="radio" id="opt_14" name="time" value="1:00" />
         <label for="opt_14">12:00 PM</label><br>
       </div>
-      <div class="box">
+      <div class="box time-box">
 
         <input type="radio" id="opt_15" name="time" value="1:00" />
         <label for="opt_15">1:00 PM</label><br>

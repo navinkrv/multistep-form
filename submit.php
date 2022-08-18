@@ -4,7 +4,7 @@ $option2= $_POST['doctor'];
 $option3= $_POST['time'];
 $name= $_POST['name'];
 $phone= $_POST['phone'];
-
+$date= $_POST['date'];
 
 
 echo $option1;
@@ -16,5 +16,7 @@ echo "<br>";
 echo $name;
 echo "<br>";
 echo $phone;
+echo "<br>";
+echo $date;
 
 ?>

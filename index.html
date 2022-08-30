@@ -43,7 +43,7 @@
        }
         label{
           display: inline-block;
-          font-size:1rem;
+          font-size:0.85rem;
           border: 1px solid grey;
           padding: 10px 2px;
           width: 100%;
@@ -63,10 +63,13 @@
     <!-- progressbar -->
     <ul id="progressbar">
       <li class="active">Select Service</li>
+      <li>Pricing</li>
       <li>Select Doctor</li>
       <li>Choose Time Slot</li>
       <li>Provide Details</li>
+     
     </ul>
+   
     <!-- fieldsets -->
     <fieldset>
       <h2 class="fs-title">Select Service</h2>
@@ -115,6 +118,31 @@
       
       <input type="button" name="next" class="next action-button" value="Next" />
     </fieldset>
+
+    <fieldset>
+      <h2 class="fs-title">Select Plan for [variable]</h2>
+      <b>Select Plan: </b>
+      <div class="box time-box">
+
+        <input type="radio" id="opt_17" name="plan" value="15 min Concultation" />
+        <label for="opt_17">15 min Concultation</label><br>
+      </div>
+      <div class="box time-box">
+
+        <input type="radio" id="opt_18" name="plan" value="30 min Concultation" />
+        <label for="opt_18">30 min Concultation</label><br>
+      </div>
+      <div class="box time-box">
+
+        <input type="radio" id="opt_19" name="plan" value="45 min Concultation" />
+        <label for="opt_19">45 min Concultation</label><br>
+      </div>
+      
+      
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+
     <fieldset>
       <h2 class="fs-title doctor-title " style="margin-bottom: 50px;">Choose doctor</h2>
       <!-- <h3 class="fs-subtitle">Your presence on the social network</h3> -->
@@ -163,7 +191,7 @@
       <h2 class="fs-title">Select Time Slot</h2>
       <div class="box">
         <b>Select Date*</b><br>
-        <input type="date" id="opt_6" name="date" value="12:00" /required>
+        <input type="date" id="opt_6" name="date" value="12:00" required />
         <!-- <label for="opt_6">12:00 PM</label><br> -->
       </div>
       <b>Select Time: </b>
